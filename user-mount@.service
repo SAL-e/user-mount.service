@@ -1,0 +1,11 @@
+[Unit]
+Description=User automount service (user-mount)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sudo /opt/user-mount.service/mount.sh %i %h
+ExecStop=/usr/bin/sudo /opt/user-mount.service/umount.sh %i %h
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
