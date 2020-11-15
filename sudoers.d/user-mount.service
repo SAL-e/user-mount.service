@@ -1,4 +1,0 @@
-# Allow user-mount@.service to mount/umount user shares
-
-%sambashare ALL= NOPASSWD: /opt/user-mount.service/mount.sh
-%sambashare ALL= NOPASSWD: /opt/user-mount.service/umount.sh
