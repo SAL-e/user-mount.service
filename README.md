@@ -8,7 +8,6 @@ cd /opt
 sudo git clone --depth 1 https://github.com/SAL-e/user-mount.service.git
 cd /etc/sudoers.d
 sudo ln -s /opt/user-mount.service/sudoers.d/user-mount_service
-sudo cp /opt/user-mount.service/sudoers.d/user-mount.service .
 cd /etc/systemd/user
 sudo ln -s /opt/user-mount.service/user-mount@.service
 cd ~
